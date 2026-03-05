@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: platform-shared-argocd
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/hauks1/sample-gitops
+    targetRevision: main
+    path: platform-shared
+  destination:
+    server: https://kubernetes.default.svc
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
