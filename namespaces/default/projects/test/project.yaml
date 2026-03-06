@@ -1,0 +1,12 @@
+apiVersion: openchoreo.dev/v1alpha1
+kind: Project
+metadata:
+  annotations:
+    openchoreo.dev/description: Test - Test to see if I am able to deploy this to OpenChoreo
+    openchoreo.dev/display-name: Test
+  labels:
+    openchoreo.dev/name: test
+  name: doclet
+  namespace: default
+spec:
+  deploymentPipelineRef: standard
