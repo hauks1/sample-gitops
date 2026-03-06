@@ -11,6 +11,8 @@ spec:
     repoURL: https://github.com/hauks1/sample-gitops
     targetRevision: main
     path: namespaces/default/platform
+    directory:
+      recurse: true
   destination:
     server: https://kubernetes.default.svc
     namespace: default
