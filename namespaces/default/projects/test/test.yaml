@@ -1,0 +1,13 @@
+apiVersion: openchoreo.dev/v1alpha1
+kind: Component
+metadata:
+  name: test
+  namespace: default
+spec:
+  owner:
+    projectName: test
+
+  componentType:
+    name: deployment/web-application
+    kind: ComponentType
+  autoBuild: true
